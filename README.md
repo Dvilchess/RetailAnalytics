@@ -53,9 +53,8 @@ npm install
 
 # 3. Ejecutar Angular
 ng serve
-La aplicación estará disponible en: http://localhost:4200
 ```
-📊 Endpoints de la API
+#📊 Endpoints de la API
 Productos
 text
 GET    /api/products         - Obtener todos los productos
@@ -73,7 +72,8 @@ Parámetros de filtro
 text
 GET /api/sales?fromDate=2026-01-01&toDate=2026-12-31
 GET /api/sales/analytics?fromDate=2026-01-01&toDate=2026-12-31
-📦 Modelos de Datos
+
+#📦 Modelos de Datos
 Product
 Campo	Tipo	Descripción
 ProductId	int	ID único
@@ -90,7 +90,7 @@ TotalAmount	decimal	Total de la venta
 Discount	decimal	Descuento aplicado
 SaleDate	DateTime	Fecha de venta
 Status	string	Estado de la venta
-🎨 Frontend
+#🎨 Frontend
 Páginas
 Dashboard - Métricas principales (productos, ventas, ingresos)
 
@@ -105,14 +105,14 @@ ProductsService - Operaciones de productos
 
 SalesService - Operaciones de ventas
 
-🔒 Configuración de CORS
+#🔒 Configuración de CORS
 El backend está configurado para aceptar peticiones desde:
 
 text
 http://localhost:4200
-📝 Ejemplos de Uso
+#📝 Ejemplos de Uso
 Crear una venta
-bash
+```bash
 curl -X POST http://localhost:5063/api/sales \
   -H "Content-Type: application/json" \
   -d '{
@@ -145,7 +145,7 @@ $body = @{
 Invoke-RestMethod -Uri "http://localhost:5063/api/sales" -Method Post -Body $body -ContentType "application/json"
 🗄️ Base de Datos
 Migraciones
-bash
+```
 # Crear nueva migración
 dotnet ef migrations add NombreMigracion
 
@@ -166,7 +166,7 @@ El proyecto incluye datos iniciales:
 
 2 clientes
 
-🚧 Próximas Mejoras
+#🚧 Próximas Mejoras
 □ Autenticación JWT
 □ Formularios CRUD completos
 □ Gráficos con Chart.js
@@ -175,16 +175,11 @@ El proyecto incluye datos iniciales:
 □ Tests unitarios
 □ CI/CD pipeline
 □ Despliegue a Azure/AWS
-📄 Licencia
+#📄 Licencia
 Este proyecto es de uso educativo y demostrativo.
 
 Desarrollado como proyecto demo para A3D Chile
-'@ | Set-Content -Path README.md -Encoding UTF8
 
-Verificar que se creó
-cat README.md
-
-text
 
 ## 2. **Hacer commit del README**
 
