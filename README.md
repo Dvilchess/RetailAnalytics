@@ -146,6 +146,8 @@ Invoke-RestMethod -Uri "http://localhost:5063/api/sales" -Method Post -Body $bod
 🗄️ Base de Datos
 Migraciones
 ```
+
+```
 # Crear nueva migración
 dotnet ef migrations add NombreMigracion
 
@@ -179,7 +181,7 @@ El proyecto incluye datos iniciales:
 Este proyecto es de uso educativo y demostrativo.
 
 Desarrollado como proyecto demo para A3D Chile
-
+```
 
 ## 2. **Hacer commit del README**
 
