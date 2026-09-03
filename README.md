@@ -182,10 +182,3 @@ Este proyecto es de uso educativo y demostrativo.
 
 Desarrollado como proyecto demo para A3D Chile
 ```
-
-## 2. **Hacer commit del README**
-
-```bash
-git add README.md
-git commit -m "docs: Agregar README completo del proyecto"
-git push origin main
