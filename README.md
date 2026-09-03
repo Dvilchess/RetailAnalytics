@@ -54,7 +54,7 @@ npm install
 # 3. Ejecutar Angular
 ng serve
 La aplicación estará disponible en: http://localhost:4200
-
+```
 📊 Endpoints de la API
 Productos
 text
