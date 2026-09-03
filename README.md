@@ -56,7 +56,7 @@ ng serve
 ```
 #📊 Endpoints de la API
 Productos
-text
+```
 GET    /api/products         - Obtener todos los productos
 GET    /api/products/{id}    - Obtener producto por ID
 POST   /api/products         - Crear nuevo producto
@@ -104,7 +104,7 @@ ApiService - Servicio base para HTTP
 ProductsService - Operaciones de productos
 
 SalesService - Operaciones de ventas
-
+```
 #🔒 Configuración de CORS
 El backend está configurado para aceptar peticiones desde:
 
