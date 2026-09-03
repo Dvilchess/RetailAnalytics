@@ -136,8 +136,8 @@ namespace RetailAnalytics.API.Migrations
                 columns: new[] { "CustomerId", "Email", "Name", "Phone", "RegistrationDate" },
                 values: new object[,]
                 {
-                    { 1, "juan.perez@email.com", "Juan Pérez", "+56912345678", new DateTime(2026, 3, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(2366) },
-                    { 2, "maria.gonzalez@email.com", "María González", "+56987654321", new DateTime(2026, 6, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(2577) }
+                    { 1, "juan.perez@email.com", "Juan Pérez", "+56912345678", new DateTime(2026, 3, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(6734) },
+                    { 2, "maria.gonzalez@email.com", "María González", "+56987654321", new DateTime(2026, 6, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(6945) }
                 });
 
             migrationBuilder.InsertData(
@@ -145,10 +145,10 @@ namespace RetailAnalytics.API.Migrations
                 columns: new[] { "ProductId", "CategoryId", "CreatedAt", "IsActive", "Name", "Price", "SKU", "StockQuantity" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1047), true, "Laptop HP", 899990m, "ELEC-001", 50 },
-                    { 2, 1, new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1175), true, "Smartphone Samsung", 499990m, "ELEC-002", 100 },
-                    { 3, 2, new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1176), true, "Camisa Casual", 25990m, "ROPA-001", 200 },
-                    { 4, 3, new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1178), true, "Lámpara LED", 15990m, "HOG-001", 75 }
+                    { 1, 1, new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5383), true, "Laptop HP", 899990m, "ELEC-001", 50 },
+                    { 2, 1, new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5512), true, "Smartphone Samsung", 499990m, "ELEC-002", 100 },
+                    { 3, 2, new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5513), true, "Camisa Casual", 25990m, "ROPA-001", 200 },
+                    { 4, 3, new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5515), true, "Lámpara LED", 15990m, "HOG-001", 75 }
                 });
 
             migrationBuilder.CreateIndex(

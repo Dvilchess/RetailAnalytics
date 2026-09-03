@@ -105,7 +105,7 @@ namespace RetailAnalytics.API.Migrations
                             Email = "juan.perez@email.com",
                             Name = "Juan Pérez",
                             Phone = "+56912345678",
-                            RegistrationDate = new DateTime(2026, 3, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(2366)
+                            RegistrationDate = new DateTime(2026, 3, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(6734)
                         },
                         new
                         {
@@ -113,7 +113,7 @@ namespace RetailAnalytics.API.Migrations
                             Email = "maria.gonzalez@email.com",
                             Name = "María González",
                             Phone = "+56987654321",
-                            RegistrationDate = new DateTime(2026, 6, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(2577)
+                            RegistrationDate = new DateTime(2026, 6, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(6945)
                         });
                 });
 
@@ -164,7 +164,7 @@ namespace RetailAnalytics.API.Migrations
                         {
                             ProductId = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1047),
+                            CreatedAt = new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5383),
                             IsActive = true,
                             Name = "Laptop HP",
                             Price = 899990m,
@@ -175,7 +175,7 @@ namespace RetailAnalytics.API.Migrations
                         {
                             ProductId = 2,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1175),
+                            CreatedAt = new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5512),
                             IsActive = true,
                             Name = "Smartphone Samsung",
                             Price = 499990m,
@@ -186,7 +186,7 @@ namespace RetailAnalytics.API.Migrations
                         {
                             ProductId = 3,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1176),
+                            CreatedAt = new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5513),
                             IsActive = true,
                             Name = "Camisa Casual",
                             Price = 25990m,
@@ -197,7 +197,7 @@ namespace RetailAnalytics.API.Migrations
                         {
                             ProductId = 4,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2026, 9, 3, 3, 36, 52, 685, DateTimeKind.Utc).AddTicks(1178),
+                            CreatedAt = new DateTime(2026, 9, 3, 3, 37, 54, 42, DateTimeKind.Utc).AddTicks(5515),
                             IsActive = true,
                             Name = "Lámpara LED",
                             Price = 15990m,
