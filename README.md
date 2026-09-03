@@ -17,32 +17,6 @@ Sistema de gestión y análisis de ventas para retail, construido con .NET 9 y A
 - **RxJS** - Programación reactiva
 - **Angular Material** - Componentes UI
 
-## 📁 Estructura del Proyecto
-RetailAnalytics/
-├── RetailAnalytics.API/ # Backend .NET
-│ ├── Controllers/ # Controladores API
-│ │ ├── ProductsController.cs
-│ │ └── SalesController.cs
-│ ├── Data/ # DbContext y configuración
-│ │ └── RetailDbContext.cs
-│ ├── Models/ # Entidades
-│ │ └── Entities.cs
-│ ├── DTOs/ # Data Transfer Objects
-│ │ └── SaleDTOs.cs
-│ └── Program.cs
-├── retail-analytics-ui/ # Frontend Angular
-│ ├── src/app/
-│ │ ├── components/
-│ │ │ ├── dashboard/
-│ │ │ ├── product-list/
-│ │ │ └── sale-list/
-│ │ ├── models/
-│ │ ├── services/
-│ │ └── app.config.ts
-└── README.md
-
-text
-
 ## 🔧 Instalación
 
 ### Requisitos previos
