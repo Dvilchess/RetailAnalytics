@@ -11,6 +11,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   get<T>(endpoint: string): Observable<T> {
+    console.log('ApiService.get llamado:', endpoint);
     return this.http.get<T>(`${this.apiUrl}/${endpoint}`);
   }
 
