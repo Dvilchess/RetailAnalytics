@@ -58,4 +58,21 @@ public class ProductsController : ControllerBase
             return StatusCode(500, "Error interno del servidor");
         }
     }
+
+    [HttpPost]
+    public async Task<ActionResult<Product>> CreateProduct(Product product)
+    {
+        try
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            
+            return CreatedAtAction(nameof(GetProduct), new { id = product.ProductId }, product);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error al crear producto");
+            return StatusCode(500, "Error interno del servidor");
+        }
+    }
 }
