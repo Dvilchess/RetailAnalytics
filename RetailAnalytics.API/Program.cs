@@ -1,19 +1,26 @@
 using Microsoft.EntityFrameworkCore;
 using RetailAnalytics.API.Data;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Ignorar ciclos en la serialización JSON
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Configurar Entity Framework
 builder.Services.AddDbContext<RetailDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? 
-    "Server=localhost;Database=RetailAnalytics;Trusted_Connection=True;TrustServerCertificate=True;"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configurar CORS para Angular
+// Configurar CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp",
